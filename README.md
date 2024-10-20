@@ -1,16 +1,25 @@
-# good_health
+# Good Health
 
 Pengembangan Aplikasi Client-Server berbasis Mobile Menggunakan Flutter.
 
-## Getting Started
+## Installation
+Download zip dan ekstrak pada direktori project Flutter dengan nama ``good_health``. Buka project tersebut pada VS Code dan masuk ke terminal dengan menekan tombol ``Ctrl + ` ``
 
-This project is a starting point for a Flutter application.
+Kemudian, masukkan command berikut untuk melakukan instalasi dependencies yang digunakan.
+```sh
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+Selanjutnya, tekan tombol ``Ctrl + Shift + f``, dan cari kata berikut ``PUT_YOUR_API_KEY_HERE``. Ganti kata tersebut dengan Google Maps API Key yang telah dimiliki. Terdapat 3 file yang menggunakan API_KEY.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Pada folder ``/lib/util/config`` di file ``config_mobile.dart``, ubah IPv4 address sesuaikan dengan yang dimiliki. IPv4 address bisa diliat melalui terminal/cmd dengan menggunakan command berikut.
+```sh
+ipconfig
+```
+Karena IPv4 bersifat dinamis (akan berubah ketika 'network disconnected'), jadi perlu diubah setiap kali melakukan koneksi ke internet.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+Untuk menjalankan project flutter di atas dengan baik, download juga zip untuk kode server-side pada link berikut:
+https://github.com/rifqiraehan/hygieia
+
+Pastikan sudah melakukan import database 'goodhealth' sebelumnya, jika sudah lewati saja. Kemudian, ubah konfigurasi database untuk ``username`` dan ``password`` pada file ``db.php``.
