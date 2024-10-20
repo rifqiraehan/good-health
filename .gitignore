@@ -42,6 +42,8 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# /android/app/src/main/AndroidManifest.xml
-# /web/index.html
-# /ios/Runner/AppDelegate.swift
+_README.md
+
+android/app/src/main/AndroidManifest.xml
+web/index.html
+ios/Runner/AppDelegate.swift
