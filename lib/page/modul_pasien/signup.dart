@@ -97,6 +97,7 @@ class SignUpPageState extends State<SignUpPage> {
                 }
                 return null;
               },
+              onFieldSubmitted: (value) => _submitForm(),
             ),
             TextFormField(
               controller: emailCont,
@@ -114,6 +115,7 @@ class SignUpPageState extends State<SignUpPage> {
                 }
                 return null;
               },
+              onFieldSubmitted: (value) => _submitForm(),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -137,6 +139,12 @@ class SignUpPageState extends State<SignUpPage> {
             ),
           ],
         ));
+  }
+
+   void _submitForm() {
+    if (_formKey.currentState!.validate()) {
+      prosesRegistrasi();
+    }
   }
 
   void prosesRegistrasi() async {

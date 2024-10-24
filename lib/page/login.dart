@@ -83,6 +83,7 @@ class LoginPageState extends State<LoginPage> {
                 }
                 return null;
               },
+              onFieldSubmitted: (value) => _login(),
             ),
             TextFormField(
               controller: passCont,
@@ -104,6 +105,7 @@ class LoginPageState extends State<LoginPage> {
                 }
                 return null;
               },
+              onFieldSubmitted: (value) => _login(),
             ),
             const SizedBox(height: 16),
             ElevatedButton(onPressed: _login, child: const Text('Login')),
