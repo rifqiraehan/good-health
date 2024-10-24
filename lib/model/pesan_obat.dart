@@ -50,6 +50,8 @@ List<PesanObat> pesanObatFromJson(jsonData) {
   List<PesanObat> result =
       List<PesanObat>.from(jsonData.map((item) => PesanObat.fromJson(item)));
 
+  result.sort((a, b) => b.waktu.compareTo(a.waktu));
+
   return result;
 }
 
