@@ -47,3 +47,4 @@ _README.md
 android/app/src/main/AndroidManifest.xml
 web/index.html
 ios/Runner/AppDelegate.swift
+ngrok.exe
